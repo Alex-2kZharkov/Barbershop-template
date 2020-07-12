@@ -1,0 +1,5 @@
+body {
+  padding: 100px 20px;
+  background: linear-gradient(to left top, rgb(255, 0, 0), rgba(255, 0, 0, 0.1))
+    no-repeat;
+}
