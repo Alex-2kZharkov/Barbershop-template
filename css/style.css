@@ -1,4 +1,20 @@
-body {
-  padding: 100px 20px;
-  background: linear-gradient(135deg, orange 60%, 60%, cyan) no-repeat;
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  font-size: 25px;
+  padding: 40px 20px;
+}
+.item {
+  flex-basis: 10px;
+  color: #fff;
+  padding: 8px 12px;
+  width: 70px;
+  text-align: center;
+  background-color: rgb(36, 130, 39);
+  margin: 10px;
+}
+.item:nth-child(1) {
+  order: 5;
+  flex-grow: 2;
 }
