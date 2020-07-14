@@ -4,9 +4,10 @@
   background-color: pink;
   font-size: 25px;
   padding: 40px 20px;
+  height: 400px;
 }
 .item {
-  flex-basis: 10px;
+  flex-basis: 100px;
   color: #fff;
   padding: 8px 12px;
   width: 70px;
@@ -14,7 +15,7 @@
   background-color: rgb(36, 130, 39);
   margin: 10px;
 }
-.item:nth-child(1) {
-  order: 5;
-  flex-grow: 2;
+.item:nth-child(4) {
+  flex: 2 1 100px;
+  align-self: center;
 }
