@@ -1,8 +1,8 @@
 .container {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
-
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 25px;
   background-color: pink;
   font-size: 25px;
   padding: 40px 20px;
@@ -17,27 +17,24 @@
   margin: 10px;
 }
 .item:nth-child(1) {
-  width: 98%;
+  width: 80%;
   background-color: rgb(9, 157, 227);
-  grid-column: 1 / 5;
-  grid-row: 1/ 3;
 }
 .item:nth-child(2) {
-  width: 98%;
+  width: 80%;
   background-color: rgb(97, 218, 251);
-  grid-column: 1 / 3;
   /*  grid-area: main; */
 }
 .item:nth-child(3) {
-  width: 98%;
+  width: 80%;
   background-color: rgb(150, 36, 70);
-  grid-column: 3 / 5;
+
   /*  grid-area: sidebar; */
 }
 .item:nth-child(4) {
   justify-self: center;
-  align-self: center;
+  grid-area: 2 / 1 / span 1 / span 3;
   background-color: rgb(18, 7, 101);
-  grid-column: 2 / 4;
+  width: 80%;
   /* grid-area: footer; */
 }
