@@ -1,5 +1,14 @@
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+
+  background-color: pink;
+  font-size: 25px;
+  padding: 40px 20px;
+  height: 400px;
+}
 .item {
-  width: 300px;
   color: #fff;
   padding: 8px 12px;
   width: 70px;
@@ -8,31 +17,27 @@
   margin: 10px;
 }
 .item:nth-child(1) {
+  width: 98%;
   background-color: rgb(9, 157, 227);
-  grid-area: header; /* gives a name*/
+  grid-column: 1 / 5;
+  grid-row: 1/ 3;
 }
 .item:nth-child(2) {
+  width: 98%;
   background-color: rgb(97, 218, 251);
-  grid-area: main;
+  grid-column: 1 / 3;
+  /*  grid-area: main; */
 }
 .item:nth-child(3) {
+  width: 98%;
   background-color: rgb(150, 36, 70);
-  grid-area: sidebar;
+  grid-column: 3 / 5;
+  /*  grid-area: sidebar; */
 }
 .item:nth-child(4) {
+  justify-self: center;
+  align-self: center;
   background-color: rgb(18, 7, 101);
-  grid-area: footer;
-}
-.container {
-  display: grid;
-  grid-template-columns: 150px 150px 300px; /* every value is single column or row */
-  grid-template-rows: auto auto auto;
-  grid-template-areas:
-    'header header header' /*specifies content of each row (based on quantity of columns and rows)*/
-    'main . sidebar'
-    'footer footer  footer';
-  background-color: pink;
-  font-size: 25px;
-  padding: 40px 20px;
-  height: 400px;
+  grid-column: 2 / 4;
+  /* grid-area: footer; */
 }
