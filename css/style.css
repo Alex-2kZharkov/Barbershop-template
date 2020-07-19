@@ -1,41 +1,17 @@
 .container {
   min-height: 100vh;
 }
-.figure {
-  width: 100px;
-  border-radius: 50%;
+.square {
+  width: 150px;
+  height: 150px;
   position: absolute;
-  top: 48%;
-  left: 50%;
-  text-align: center;
-  padding: 45px 0;
-}
-.normal {
-  background-color: red;
-  transition: top 2s, left 1s 0.5s, border-radius 0.5s 1s,
-    background-color 0.5s 1.5s;
-}
-.example1 {
-  background-color: royalblue;
-  z-index: 5;
-  transition: top 1s ease-in-out, left 1s ease-in-out;
-}
-
-.example2 {
-  background-color: seagreen;
-  transition: top 1s, left 1s 1s;
-}
-.container:hover .normal {
-  top: 0;
-  left: 94%;
-  border-radius: 0px;
-  background-color: violet;
-}
-.container:hover .example1 {
   top: 0;
   left: 0;
+  background-color: plum;
+  transition: all 1s cubic-bezier(0.98, 0.1, 0.95, 1.02);
 }
-.container:hover .example2 {
-  top: 90%;
-  left: 94%;
+.container:hover .square {
+  top: 82%;
+  left: 90%;
+  background-color: purple;
 }
