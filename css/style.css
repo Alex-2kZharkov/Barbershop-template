@@ -5,13 +5,41 @@
   width: 150px;
   height: 150px;
   position: absolute;
-  top: 0;
-  left: 0;
+  left: 20%;
   background-color: plum;
-  transition: all 1s cubic-bezier(0.98, 0.1, 0.95, 1.02);
 }
-.container:hover .square {
-  top: 82%;
-  left: 90%;
-  background-color: purple;
+.square1 {
+  top: 5%;
+  transition: all 1s cubic-bezier(0.98, -1.52, 0, 1.71);
+}
+.square2 {
+  top: 25%;
+  transition: all 1s cubic-bezier(0.98, -1.52, 0, 1);
+}
+.square3 {
+  top: 45%;
+  transition: all 1s cubic-bezier(0.25, 0.3, 0.75, 1); /*good looking one*/
+}
+.square4 {
+  top: 65%;
+  transition: all 1s cubic-bezier(0, 0, 0.28, 0);
+}
+.square5 {
+  top: 85%;
+  transition: all 1s cubic-bezier(0.57, 0.19, 0.14, 0.37);
+}
+.container:hover .square1 {
+  left: 70%;
+}
+.container:hover .square2 {
+  left: 70%;
+}
+.container:hover .square3 {
+  left: 70%;
+}
+.container:hover .square4 {
+  left: 70%;
+}
+.container:hover .square5 {
+  left: 70%;
 }
