@@ -1,43 +1,26 @@
-.container {
-  min-height: 100vh;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.container {
+  width: 150px;
+  height: 150px;
+  background-color: brown;
+  perspective: 100px;
+  perspective-origin: bottom right;
+}
+
 .square {
   width: 150px;
   height: 150px;
-  position: absolute;
-  left: 20%;
-  background-color: plum;
+  background-color: black;
+  transform: rotateX(100deg) translateZ(50px);
+
 }
+
 .square1 {
-  top: 5%;
-  transform: skew(
-    25deg
-  ); /*what is actually stretching along x or y or both sides*/
-}
-.square2 {
-  top: 25%;
-  transform: scale(2.5, 0.5);
-}
-.square3 {
-  top: 45%;
-  background-image: linear-gradient(
-    to right bottom,
-    rgb(0, 0, 0) 55%,
-    rgb(100, 255, 0)
-  );
-  animation: 1s cubic-bezier(0.1, 0.39, 0.26, 0.84) infinite fireUp;
-}
-@keyframes fireUp {
-  from {
-    transform: rotateX(0deg);
-  }
-  to {
-    transform: rotateX(360deg);
-  }
-}
-.square4 {
-  top: 65%;
-}
-.square5 {
-  top: 85%;
+
+  /*what is actually stretching along x or y or both sides*/
 }
