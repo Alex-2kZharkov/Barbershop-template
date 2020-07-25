@@ -2,40 +2,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: antiquewhite;
-}
-
-.container {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  background-color: brown;
-  perspective: 100px;
-  perspective-origin: bottom right;
-  transform-style: preserve-3d;
+  font-size: 32px;
 }
 
 .square {
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
-  background-color: black;
+  border: solid 10px black;
+  padding: 20px;
+  margin-bottom: 30px;
+
 }
 
 .square1 {
-  background-color: cadetblue;
+  background-color: yellow;
+  box-sizing: border-box;
+
 }
 
 .square2 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  backface-visibility: hidden;
-  transition: transform .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
+  background-color: tomato;
 
-.square2:hover {
-  transform: rotateY(180deg);
 }
