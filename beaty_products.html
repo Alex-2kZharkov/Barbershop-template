@@ -49,8 +49,8 @@
         </div>
         <section class="beauty-products">
           <div class="filter">
-            <div class="producers">
-              <h2 class="producers-title">ПРОИЗВОДИТЕЛИ:</h2>
+            <form class="producers">
+              <legend class="producers-title">ПРОИЗВОДИТЕЛИ:</legend>
               <ul>
                 <li>
                   <input
@@ -107,13 +107,35 @@
                   <label for="americancrew">American Crew</label>
                 </li>
               </ul>
-            </div>
-            <div class="items-group">
-              <h2 class="producers-title">ГРУППЫ ТОВАРОВ:</h2>
-              <div class="items-group-show">
-                <button>Показать</button>
-              </div>
-            </div>
+
+              <legend class="producers-title">ГРУППЫ ТОВАРОВ:</legend>
+
+              <ul class="items-group">
+                <li>
+                  <input type="radio" id="shave" name="group" value="shave" />
+                  <label for="shave">Бритвенные принадлежности</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="beautyproducts"
+                    name="group"
+                    value="beautyproducts"
+                  />
+                  <label for="beautyproducts">Средства для ухода</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="accessory"
+                    name="group"
+                    value="accessory"
+                  />
+                  <label for="accessory">Акскссуары</label>
+                </li>
+              </ul>
+              <button class="items-group-show">Показать</button>
+            </form>
           </div>
           <div class="beauty-products-items">
             <div class="item">
