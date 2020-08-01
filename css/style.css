@@ -11,14 +11,12 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 780px 140px;
-  width: 55.95%;
+  grid-template-columns: 5.5fr 1fr;
+  width: 940px;
   padding: 0 10px;
   margin: 0 auto;
 
 }
-
-
 
 .main-navigation ul {
   display: grid;
@@ -46,7 +44,6 @@ body {
 }
 
 .login {
-
   margin-left: 30px;
 }
 
@@ -59,11 +56,11 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-
 }
 
-.main-content {
-  padding: 0 14.55%;
+.main-container {
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .index-logo {
@@ -85,6 +82,14 @@ body {
 
 .features-item {
   text-align: center;
+}
+
+.features-item:first-child {
+  margin-left: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 8px;
 }
 
 .features-name {
