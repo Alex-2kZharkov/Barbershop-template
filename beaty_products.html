@@ -50,91 +50,94 @@
         <section class="beauty-products">
           <div class="filter">
             <form class="producers">
-              <legend class="producers-title">ПРОИЗВОДИТЕЛИ:</legend>
-              <ul>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="baxter"
-                    name="brand"
-                    value="baxter"
-                  />
-                  <label for="baxter">Baxter of California</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="natty"
-                    name="brand"
-                    value="natty"
-                  />
-                  <label for="natty">Mr Natty</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="suavecito"
-                    name="brand"
-                    value="suavecito"
-                  />
-                  <label for="suavecito">Suavecito</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="malingoetz"
-                    name="brand"
-                    value="malingoetz"
-                  />
-                  <label for="malingoetz">Malin+Goetz</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="murray"
-                    name="brand"
-                    value="murray"
-                  />
-                  <label for="murray">Murray’s</label>
-                </li>
-                <li>
-                  <input
-                    type="checkbox"
-                    id="americancrew"
-                    name="brand"
-                    value="americancrew"
-                  />
-                  <label for="americancrew">American Crew</label>
-                </li>
-              </ul>
+              <fieldset>
+                <legend class="producers-title">ПРОИЗВОДИТЕЛИ:</legend>
+                <ul>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="baxter"
+                      name="brand"
+                      value="baxter"
+                    />
+                    <label for="baxter">Baxter of California</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="natty"
+                      name="brand"
+                      value="natty"
+                    />
+                    <label for="natty">Mr Natty</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="suavecito"
+                      name="brand"
+                      value="suavecito"
+                    />
+                    <label for="suavecito">Suavecito</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="malingoetz"
+                      name="brand"
+                      value="malingoetz"
+                    />
+                    <label for="malingoetz">Malin+Goetz</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="murray"
+                      name="brand"
+                      value="murray"
+                    />
+                    <label for="murray">Murray’s</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="americancrew"
+                      name="brand"
+                      value="americancrew"
+                    />
+                    <label for="americancrew">American Crew</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend class="producers-title">ГРУППЫ ТОВАРОВ:</legend>
 
-              <legend class="producers-title">ГРУППЫ ТОВАРОВ:</legend>
-
-              <ul class="items-group">
-                <li>
-                  <input type="radio" id="shave" name="group" value="shave" />
-                  <label for="shave">Бритвенные принадлежности</label>
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    id="beautyproducts"
-                    name="group"
-                    value="beautyproducts"
-                  />
-                  <label for="beautyproducts">Средства для ухода</label>
-                </li>
-                <li>
-                  <input
-                    type="radio"
-                    id="accessory"
-                    name="group"
-                    value="accessory"
-                  />
-                  <label for="accessory">Акскссуары</label>
-                </li>
-              </ul>
-              <button class="items-group-show">Показать</button>
+                <ul class="items-group">
+                  <li>
+                    <input type="radio" id="shave" name="group" value="shave" />
+                    <label for="shave">Бритвенные принадлежности</label>
+                  </li>
+                  <li>
+                    <input
+                      type="radio"
+                      id="beautyproducts"
+                      name="group"
+                      value="beautyproducts"
+                    />
+                    <label for="beautyproducts">Средства для ухода</label>
+                  </li>
+                  <li>
+                    <input
+                      type="radio"
+                      id="accessory"
+                      name="group"
+                      value="accessory"
+                    />
+                    <label for="accessory">Акскссуары</label>
+                  </li>
+                </ul>
+                <button class="items-group-show" type="button">Показать</button>
+              </fieldset>
             </form>
           </div>
           <div class="beauty-products-items">
@@ -145,19 +148,21 @@
                   alt="Набор для путешествий"
                 />
               </div>
-              <p>
-                Набор для путешествий
-                <span>
-                  «Baxter of California»
-                </span>
-              </p>
+              <div>
+                <a href="#">
+                  <span>Набор для путешествий</span> <br />
+                  <span>
+                    «Baxter of California»
+                  </span></a
+                >
+              </div>
               <div class="item-cost">
-                <div class="item-price">
+                <span class="item-price">
                   2 900 РУБ
-                </div>
-                <div class="item-buy">
+                </span>
+                <a href="#" class="item-buy">
                   КУПИТЬ
-                </div>
+                </a>
               </div>
             </div>
             <div class="item">
@@ -167,38 +172,44 @@
                   alt="Увлажняющий кондиционер"
                 />
               </div>
-              <p>
-                Увлажняющий кондиционер
-                <span>
-                  «Baxter of California»
-                </span>
-              </p>
+              <div>
+                <a href="#">
+                  <span>Увлажняющий кондиционер</span> <br />
+                  <span>
+                    «Baxter of California»
+                  </span></a
+                >
+              </div>
+
               <div class="item-cost">
-                <div class="item-price">
+                <span class="item-price">
                   750 РУБ
-                </div>
-                <div class="item-buy">
+                </span>
+                <a href="#" class="item-buy">
                   КУПИТЬ
-                </div>
+                </a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
                 <img src="./img/items/image-3.jpeg" alt="Гель для волос " />
               </div>
-              <p>
-                Гель для волос
-                <span>
-                  «Suavecito»
-                </span>
-              </p>
+              <div>
+                <a href="#">
+                  <span>Гель для волос</span> <br />
+                  <span>
+                    «Suavecito»
+                  </span></a
+                >
+              </div>
+
               <div class="item-cost">
-                <div class="item-price">
+                <span class="item-price">
                   290 РУБ
-                </div>
-                <div class="item-buy">
+                </span>
+                <a href="#" class="item-buy">
                   КУПИТЬ
-                </div>
+                </a>
               </div>
             </div>
             <div class="item">
@@ -208,57 +219,66 @@
                   alt="Глина для укладки волос  "
                 />
               </div>
-              <p>
-                Глина для укладки волос
-                <span>
-                  «American crew»
-                </span>
-              </p>
+              <div>
+                <a href="#">
+                  <span> Глина для укладки волос</span> <br />
+                  <span>
+                    «American crew»
+                  </span></a
+                >
+              </div>
+
               <div class="item-cost">
-                <div class="item-price">
+                <span class="item-price">
                   500 РУБ
-                </div>
-                <div class="item-buy">
+                </span>
+                <a href="#" class="item-buy">
                   КУПИТЬ
-                </div>
+                </a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
                 <img src="./img/items/image-5.jpeg" alt=" Гель для волос " />
               </div>
-              <p>
-                Гель для волос
-                <span>
-                  «American Crew»
-                </span>
-              </p>
+              <div>
+                <a href="#">
+                  <span> Гель для волос</span> <br />
+                  <span>
+                    «American crew»
+                  </span></a
+                >
+              </div>
+
               <div class="item-cost">
-                <div class="item-price">
+                <span class="item-price">
                   300 РУБ
-                </div>
-                <div class="item-buy">
+                </span>
+                <a href="#" class="item-buy">
                   КУПИТЬ
-                </div>
+                </a>
               </div>
             </div>
             <div class="item">
               <div class="item-image">
                 <img src="./img/items/image-6.jpeg" alt="Набор для бритья" />
               </div>
-              <p>
-                Набор для бритья
-                <span>
-                  «Baxter of California»
-                </span>
-              </p>
+              <div>
+                <a href="#">
+                  <span> Набор для бритья</span> <br />
+                  <span>
+                    «Baxter of California»
+                  </span></a
+                >
+              </div>
+
               <div class="item-cost">
-                <div class="item-price">
+                <span class="item-price">
                   3 900 РУБ
-                </div>
-                <div class="item-buy">
+                </span>
+                <a href="#" class="item-buy">
                   КУПИТЬ
-                </div>
+                </a>
               </div>
             </div>
           </div>
