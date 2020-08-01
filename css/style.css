@@ -118,5 +118,65 @@ body {
 }
 
 .index-content-title {
-  margin: 0
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+}
+
+.index-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 55px 80px;
+  margin-bottom: 35px;
+  background: url("/img/white-pattern.png");
+  color: #000000;
+}
+
+.new-preview {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  list-style: none;
+}
+
+.new-preview li {
+  margin-bottom: 35px;
+}
+
+.new-preview li:last-child {
+  margin-bottom: 0;
+
+}
+
+.new-preview p {
+  max-width: 305px;
+  margin: 0;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+}
+
+.new-preview time {
+  font-size: 14px;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: #6a6967;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "PT Sans Narrow", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #000000;
+  color: #ffffff;
+}
+.index-content-left::after {
+  
 }
