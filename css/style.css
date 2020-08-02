@@ -1,5 +1,6 @@
 body {
-  background: url("/img/main-background.png") center 0%;
+  background: url("/img/main-background.png") no-repeat 50%;
+  background-size: cover;
   color: #ffffff;
   margin: 0;
 }
@@ -56,6 +57,22 @@ body {
   position: absolute;
   left: 0;
   top: 0;
+}
+
+.main-content {
+  margin-bottom: 60px;
+}
+
+.main-content::after {
+  position: absolute;
+  bottom: -920px;
+  z-index: -1;
+  left: 0;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 330px;
+  background: url("/img/addiotional-background.png") repeat;
 }
 
 .main-container {
@@ -158,7 +175,10 @@ body {
 
 }
 
-.new-preview p {
+.new-preview p,
+.address,
+.work-schedule,
+.index-content-right p {
   max-width: 305px;
   margin: 0;
   line-height: 24px;
@@ -216,5 +236,9 @@ body {
   margin: 0px 0px 43px 60px;
   width: 328px;
   height: 165px;
-  border: solid 7px #333;
+  border: solid 7px #ffffff;
+}
+
+.site-footer {
+  background-color: #242424;
 }
