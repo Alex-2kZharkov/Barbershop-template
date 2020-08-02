@@ -1,5 +1,5 @@
 body {
-  background: url("/img/main-background.png") no-repeat 50%;
+  background: url('/img/main-background.png') no-repeat 50%;
   background-size: cover;
   color: #ffffff;
   margin: 0;
@@ -16,7 +16,6 @@ body {
   width: 940px;
   padding: 0 10px;
   margin: 0 auto;
-
 }
 
 .main-navigation ul {
@@ -32,7 +31,7 @@ body {
 .navigation-link {
   text-transform: uppercase;
   color: #ffffff;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-decoration: none;
@@ -49,9 +48,9 @@ body {
 }
 
 .login::before {
-  content: "";
+  content: '';
   display: block;
-  background: url("/img/icon-login.gif") no-repeat center;
+  background: url('/img/icon-login.gif') no-repeat center;
   width: 18px;
   height: 16px;
   position: absolute;
@@ -61,18 +60,6 @@ body {
 
 .main-content {
   margin-bottom: 60px;
-}
-
-.main-content::after {
-  position: absolute;
-  bottom: -920px;
-  z-index: -1;
-  left: 0;
-  content: "";
-  display: block;
-  width: 100%;
-  height: 330px;
-  background: url("/img/addiotional-background.png") repeat;
 }
 
 .main-container {
@@ -113,11 +100,11 @@ body {
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .features-name::after {
-  content: "";
+  content: '';
   display: block;
   width: 15px;
   height: 15px;
@@ -131,7 +118,7 @@ body {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .index-content-title {
@@ -139,7 +126,7 @@ body {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 700;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   text-transform: uppercase;
 }
 
@@ -153,9 +140,9 @@ body {
   grid-template-columns: 1fr 1fr;
   width: 940px;
   box-sizing: border-box;
-  padding: 55px 45px 55px 80px;
+  padding: 55px 45px 60px 80px;
   margin: 0 auto 35px;
-  background: url("/img/white-pattern.png");
+  background: url('/img/white-pattern.png');
   color: #000000;
 }
 
@@ -172,7 +159,6 @@ body {
 
 .new-preview li:last-child {
   margin-bottom: 0;
-
 }
 
 .new-preview p,
@@ -184,13 +170,13 @@ body {
   line-height: 24px;
   font-size: 14px;
   font-weight: 700;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   text-transform: uppercase;
 }
 
 .new-preview time {
   font-size: 14px;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   color: #6a6967;
 }
 
@@ -202,7 +188,7 @@ body {
   border: none;
   font-size: 14px;
   font-weight: 700;
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: 'PT Sans Narrow', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #000000;
@@ -216,20 +202,18 @@ body {
 
 .gallery-next {
   margin-left: -5px;
-
 }
 
 .index-content-left::after {
   position: absolute;
   left: 48%;
-  top: 18.60%;
-  content: "";
+  top: 18.6%;
+  content: '';
   display: block;
   width: 8px;
   height: 278px;
-  background: url("/img/block-divider.jpg") no-repeat;
+  background: url('/img/block-divider.jpg') no-repeat;
 }
-
 
 .gallery-content {
   display: inline-block;
@@ -240,5 +224,55 @@ body {
 }
 
 .site-footer {
-  background-color: #242424;
+  background: url('/img/footer-background.png') repeat;
+}
+.site-footer::before {
+  position: absolute;
+  bottom: -654px;
+  z-index: -1;
+  left: 0;
+  content: '';
+  display: block;
+  width: 100%;
+  height: 330px;
+  background: #070707;
+}
+.address {
+  margin-bottom: 25px;
+}
+.btn-modificator {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-left: 15px;
+}
+.work-schedule {
+  margin-bottom: 48px;
+}
+.index-content-right-container {
+  margin-left: 60px;
+}
+.index-content-right p {
+  margin-bottom: 35px;
+}
+.appointment-form {
+  display: grid;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: repeat(2, 42px);
+  gap: 20px 25px;
+}
+.appointment-form input {
+  padding: 0px 15px;
+  border: solid 2px #000101;
+}
+.appointment-form input::placeholder {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+.send-button {
+  grid-area: 3 / 1 / span 1 / span 2;
+  width: 100%;
+  margin-top: 10px;
 }
