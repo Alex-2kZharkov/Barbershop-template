@@ -126,11 +126,18 @@ body {
   text-transform: uppercase;
 }
 
+.right-title {
+  margin-left: 60px;
+}
+
 .index-content {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 55px 80px;
-  margin-bottom: 35px;
+  width: 940px;
+  box-sizing: border-box;
+  padding: 55px 45px 55px 80px;
+  margin: 0 auto 35px;
   background: url("/img/white-pattern.png");
   color: #000000;
 }
@@ -138,7 +145,7 @@ body {
 .new-preview {
   padding: 0;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 31px;
   list-style: none;
 }
 
@@ -168,7 +175,11 @@ body {
 }
 
 .btn {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 140px;
   padding: 15px 30px;
+  border: none;
   font-size: 14px;
   font-weight: 700;
   font-family: "PT Sans Narrow", sans-serif;
@@ -177,6 +188,33 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
+
+.gallery-prev {
+  margin-left: 60px;
+  margin-right: 20px;
+}
+
+.gallery-next {
+  margin-left: -5px;
+
+}
+
 .index-content-left::after {
-  
+  position: absolute;
+  left: 48%;
+  top: 18.60%;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 278px;
+  background: url("/img/block-divider.jpg") no-repeat;
+}
+
+
+.gallery-content {
+  display: inline-block;
+  margin: 0px 0px 43px 60px;
+  width: 328px;
+  height: 165px;
+  border: solid 7px #333;
 }
