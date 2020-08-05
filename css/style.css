@@ -226,6 +226,7 @@ body {
 .site-footer {
   background: url('/img/footer-background.png') repeat;
 }
+
 .site-footer::before {
   position: absolute;
   bottom: -700px;
@@ -237,33 +238,41 @@ body {
   height: 330px;
   background: #070707;
 }
+
 .address {
   margin-bottom: 25px;
 }
+
 .btn-modificator {
   padding-left: 25px;
   padding-right: 25px;
   margin-left: 15px;
 }
+
 .work-schedule {
   margin-bottom: 48px;
 }
+
 .index-content-right-container {
   margin-left: 60px;
 }
+
 .index-content-right p {
   margin-bottom: 35px;
 }
+
 .appointment-form {
   display: grid;
   grid-template-columns: repeat(2, 140px);
   grid-template-rows: repeat(2, 42px);
   gap: 20px 25px;
 }
+
 .appointment-form input {
   padding: 0px 15px;
   border: solid 2px #000101;
 }
+
 .appointment-form input::placeholder {
   font-size: 14px;
   font-weight: 700;
@@ -271,20 +280,24 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+
 .send-button {
   grid-area: 3 / 1 / span 1 / span 2;
   width: 100%;
   margin-top: 10px;
 }
+
 .site-footer .container {
   display: grid;
   grid-template-columns: 350px 140px 1fr;
   column-gap: 50px;
   padding: 60px 0 40px;
 }
+
 .site-footer-copyright {
   justify-self: end;
 }
+
 .site-footer p,
 .find-us,
 .developer {
@@ -295,18 +308,26 @@ body {
   line-height: 24px;
   color: #ffffff;
 }
+
+.site-footer p {
+  margin: 0;
+}
+
 .find-us {
   border-bottom: solid 1.5px #a7a7a7;
   text-decoration: none;
 }
+
 .site-footer-social {
   text-align: center;
 }
+
 .social-links {
   display: grid;
   grid-template-columns: repeat(3, 44px);
   gap: 6px;
 }
+
 .social-link {
   display: block;
   width: 44px;
@@ -315,19 +336,24 @@ body {
   text-decoration: none;
   background-color: #000000;
 }
+
 .social-link-vk {
   background: url('/img/vk.png') no-repeat 50% 50% #000000;
 }
+
 .social-link-fs {
   background: url('/img/fb.png') no-repeat 50% 50% #000000;
 }
+
 .social-link-inst {
   background: url('/img/inst.png') no-repeat 50% 50% #000000;
 }
+
 .site-footer-copyright p {
   margin-bottom: 25px;
   text-align: center;
 }
+
 .developer {
   box-sizing: border-box;
   width: 140px;
