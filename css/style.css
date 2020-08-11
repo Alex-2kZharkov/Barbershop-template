@@ -1,13 +1,16 @@
 body {
+  margin: 0;
+  font-family: 'PT Sans Narrow', "Helvetica", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
   background: #000000 url('/img/main-background.png') no-repeat center top;
   background-size: cover;
-  color: #ffffff;
-  margin: 0;
 }
 
 .main-header {
-
-
   background-color: #000000;
   margin-bottom: 90px;
 }
@@ -227,6 +230,11 @@ body {
 .gallery-prev {
   margin-left: 60px;
   margin-right: 20px;
+  opacity: 0.3;
+}
+
+.gallery-prev:hover {
+  background-color: #000000;
 }
 
 .gallery-next {
@@ -300,6 +308,13 @@ body {
 .appointment-form input {
   padding: 0px 15px;
   border: solid 2px #000101;
+  transition: outline 0.25s cubic-bezier(0.25, 0.3, 0.75, 1);
+
+}
+
+.appointment-form input:focus {
+  outline: solid 2px #663d15;
+
 }
 
 .appointment-form input::placeholder {

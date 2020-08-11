@@ -1,0 +1,135 @@
+body {
+    margin: 0;
+    font-family: 'PT Sans Narrow', "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    background: url("/img/white-pattern.png");
+}
+
+.main-header {
+    background-color: #000000;
+    margin-bottom: 55px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    height: 70px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.main-navigation {
+    flex-basis: 720px;
+}
+
+.main-navigation ul {
+    display: flex;
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+}
+
+.main-navigation ul li {
+    line-height: 20px;
+}
+
+.img-link {
+    position: relative;
+    top: -3px;
+}
+
+.navigation-link {
+    padding: 26px 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.26, 0.85, 0.75, 1);
+}
+
+.navigation-link:hover {
+    background-color: #848484;
+}
+
+.user-block {
+    position: relative;
+    flex-basis: 140px;
+
+}
+
+.login {
+    padding: 25px 20px 25px 55px;
+}
+
+.login::before {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    content: '';
+    display: block;
+    background: url('/img/icon-login.gif') no-repeat center;
+    width: 18px;
+    height: 16px;
+    padding-right: 20px;
+    opacity: 0.3;
+    transition: opacity 0.3s cubic-bezier(0.25, 0.3, 0.75, 1);
+}
+
+.login:hover::before {
+    opacity: 1;
+}
+
+.main-content {
+    margin-bottom: 20px;
+}
+
+.main-content .container {
+    display: block;
+}
+
+.section-name {
+    margin: 0;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    font-family: 'PT Sans Narrow', "Helvetica", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.bread-crumbs {
+    margin-bottom: 45px;
+}
+
+.bread-crumbs a {
+
+    line-height: 1.3;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-page::after {
+    display: inline-block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    margin: 0 20px 1px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.price-list a {
+    color: #b8b8b7;
+}
+
+.section-title {
+    margin: 0;
+    line-height: 1.3;
+    font-size: 48px;
+}
