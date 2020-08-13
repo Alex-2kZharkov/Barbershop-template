@@ -10,43 +10,40 @@ legend {
     border: none;
 }
 
-.shop-header {
-    margin-bottom: 50px;
-    background-color: #000000;
-}
-
 .main-header {
     background-color: #000000;
-    margin-bottom: 90px;
-  }
-  
-  .container {
+    margin-bottom: 55px;
+}
+
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 940px;
-    height: 70px;
+
     padding: 0 10px;
     margin: 0 auto;
-  }
-  
-  .main-navigation {
+}
+
+.main-navigation {
     flex-basis: 720px;
-  }
-  
-  .main-navigation ul {
+}
+
+.main-navigation ul {
     display: flex;
     padding: 0px;
     margin: 0;
     list-style: none;
-  }
-  
-  .main-navigation ul li {
+}
+
+.main-navigation ul li {}
+
+.navigation-link {
+    display: block;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 20.5px 20px;
     line-height: 20px;
-  }
-  
-  .navigation-link {
-    padding: 25px 20px;
     text-transform: uppercase;
     color: #ffffff;
     font-family: 'PT Sans Narrow', sans-serif;
@@ -54,40 +51,43 @@ legend {
     font-size: 16px;
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.26, 0.85, 0.75, 1);
-  }
-  
-  .navigation-link:hover {
+}
+
+.img-link {
+    padding: 18px 20px 23px;
+}
+
+
+.navigation-link:hover {
     background-color: #848484;
-  }
-  
-  .user-block {
+}
+
+.user-block {
     position: relative;
     flex-basis: 140px;
-  
-  }
-  
-  .login {
-    padding: 25px 20px 25px 55px;
-  }
-  
-  .login::before {
+}
+
+.login {
+    padding: 22px 20px 28px 55px;
+}
+
+.login::before {
     position: absolute;
     left: 15px;
-    top: 0;
+    top: 22px;
     content: '';
     display: block;
     background: url('/img/icon-login.gif') no-repeat center;
     width: 18px;
     height: 16px;
-  
     padding-right: 20px;
     opacity: 0.3;
     transition: opacity 0.3s cubic-bezier(0.25, 0.3, 0.75, 1);
-  }
-  
-  .login:hover::before {
+}
+
+.login:hover::before {
     opacity: 1;
-  }
+}
 
 .main-content .container {
     display: block;
