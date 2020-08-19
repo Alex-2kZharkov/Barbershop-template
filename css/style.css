@@ -1,4 +1,5 @@
 body {
+  z-index: 1;
   margin: 0;
   font-family: 'PT Sans Narrow', "Helvetica", sans-serif;
   font-weight: 700;
@@ -448,6 +449,7 @@ body {
 
 .login-window {
   position: absolute;
+  z-index: 10;
   top: 120px;
   left: 50%;
   box-sizing: border-box;
@@ -459,7 +461,7 @@ body {
 
 .login-window-close {
   position: absolute;
-  top: 10;
+  top: 10px;
   right: -33px;
   width: 23px;
   height: 23px;
@@ -477,9 +479,10 @@ body {
   left: 2px;
   content: "";
   display: block;
-  width: 19px;
-  height: 3px;
-  border-radius: 2px;
+  width: 30px;
+  height: 5px;
+
+  border-radius: 1px;
   background-color: #d1d1d1;
 }
 
@@ -598,4 +601,33 @@ body {
 .login-modificator {
   width: 100%;
   margin-top: 15px;
+}
+
+.map-container {
+  position: fixed;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  margin-top: -290px;
+  margin-left: -390px;
+  z-index: 5;
+  width: 760px;
+  height: 560px;
+  border: solid 10px #ffffff;
+  background: url("/img/map.jpg");
+}
+
+.map-close {
+  top: 0;
+  right: -40px
+}
+
+.overlay {
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
