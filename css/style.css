@@ -553,15 +553,14 @@ body {
 
 .login-form-checkbox:checked+.checkbox-indicator::before,
 .login-form-checkbox:checked+.checkbox-indicator::after {
-  position: absolute;
   top: 7px;
   left: 1px;
   content: "";
   display: block;
   width: 14px;
   height: 2px;
-
-  background-color: #000000;
+  background-color: #000000;position: absolute;
+  
 }
 
 .login-form-checkbox:checked+.checkbox-indicator::before {

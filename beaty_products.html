@@ -55,59 +55,62 @@
                 <legend class="producers-title">ПРОИЗВОДИТЕЛИ:</legend>
                 <ul>
                   <li class="producer">
-                    <input
-                    class="producer-checkbox"
-                      type="checkbox"
-                      id="baxter"
-                      name="brand"
-                      value="baxter"
-                    />
-                    <label for="baxter">Baxter of California</label>
+                   
+                    <label  > <input
+                      class="producer-checkbox"
+                        type="checkbox"                   
+                        name="brand"
+                        value="baxter"
+                      />
+                      <span class="producer-checkbox-replacer"></span>
+                      <span class="producer-label">Baxter of California</span></label>
                   </li>
                   <li class="producer">
-                    <input
-                      type="checkbox" class="producer-checkbox"
-                      id="natty"
+                    
+                    <label  ><input
+                      type="checkbox" class="producer-checkbox"             
                       name="brand"
                       value="natty"
                     />
-                    <label for="natty">Mr Natty</label>
+                    <span class="producer-checkbox-replacer"></span>
+                    <span class="producer-label">Mr Natty</span></label>
                   </li>
                   <li class="producer">
-                    <input
+                   
+                    <label  > <input
                       type="checkbox" class="producer-checkbox"
                       id="suavecito"
                       name="brand"
                       value="suavecito"
-                    />
-                    <label for="suavecito">Suavecito</label>
+                    /><span class="producer-checkbox-replacer"></span>
+                    <span class="producer-label">Suavecito</span>
+                    </label>
                   </li>
                   <li class="producer">
-                    <input
-                      type="checkbox" class="producer-checkbox"
-                      id="malingoetz"
+                    
+                    <label  ><input
+                      type="checkbox" class="producer-checkbox"              
                       name="brand"
                       value="malingoetz"
-                    />
-                    <label for="malingoetz">Malin+Goetz</label>
+                    /><span class="producer-checkbox-replacer"></span>  <span class="producer-label">Malin+Goetz</span></label>
                   </li>
                   <li class="producer">
-                    <input
+                   
+                    <label  > <input
                       type="checkbox" class="producer-checkbox"
-                      id="murray"
+                    
                       name="brand"
                       value="murray"
-                    />
-                    <label for="murray">Murray’s</label>
+                    /><span class="producer-checkbox-replacer"></span>  <span class="producer-label">Murray’s</span></label>
                   </li>
-                  <li class="producer">
-                    <input
+                  <li class="producer">                 
+                    <label >   
+                      <input
                       type="checkbox" class="producer-checkbox"
-                      id="americancrew"
                       name="brand"
                       value="americancrew"
-                    />
-                    <label for="americancrew">American Crew</label>
+                    /><span class="producer-checkbox-replacer"></span>
+               <span class="producer-label">American Crew</span></label>
                   </li>
                 </ul>
               </fieldset>
@@ -115,30 +118,33 @@
                 <legend class="producers-title">ГРУППЫ ТОВАРОВ:</legend>
 
                 <ul class="items-group">
-                  <li>
-                    <input type="radio" id="shave" name="group" value="shave" />
-                    <label for="shave">Бритвенные принадлежности</label>
+                  <li class="label-modificator">              
+                    <label >
+                      <input class="hidden-radio" type="radio" id="shave" name="group" value="shave" />
+                      <span class="item-radio"></span>
+                      <span class="item-radio-label">Бритвенные принадлежности</span></label>
                   </li>
-                  <li>
-                    <input
+                  <li>                  
+                    <label >
+                      <input class="hidden-radio"
                       type="radio"
                       id="beautyproducts"
                       name="group"
                       value="beautyproducts"
-                    />
-                    <label for="beautyproducts">Средства для ухода</label>
+                    /><span class="item-radio"></span>
+                    <span class="item-radio-label">Средства для ухода</span></label>
                   </li>
-                  <li>
-                    <input
+                  <li>                 
+                    <label > <input class="hidden-radio"
                       type="radio"
                       id="accessory"
                       name="group"
                       value="accessory"
-                    />
-                    <label for="accessory">Акскссуары</label>
+                    /> <span class="item-radio"></span>
+                    <span class="item-radio-label">Аксессуары</span></label>
                   </li>
                 </ul>
-                <button class="items-group-show" type="button">Показать</button>
+                <button class="items-group-show btn" type="button">Показать</button>
               </fieldset>
             </form>
           </div>
