@@ -20,7 +20,6 @@ legend {
     justify-content: space-between;
     align-items: center;
     width: 940px;
-
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -29,14 +28,16 @@ legend {
     flex-basis: 720px;
 }
 
+.main-navigation {
+    display: flex;
+}
+
 .main-navigation ul {
     display: flex;
     padding: 0px;
     margin: 0;
     list-style: none;
 }
-
-.main-navigation ul li {}
 
 .navigation-link {
     display: block;
@@ -54,6 +55,7 @@ legend {
 }
 
 .img-link {
+
     padding: 18px 20px 23px;
 }
 

@@ -25,7 +25,9 @@ body {
 .main-navigation {
     flex-basis: 720px;
 }
-
+.main-navigation {
+    display: flex;
+}
 .main-navigation ul {
     display: flex;
     padding: 0px;
@@ -33,7 +35,7 @@ body {
     list-style: none;
 }
 
-.main-navigation ul li {}
+
 
 .navigation-link {
     display: block;
