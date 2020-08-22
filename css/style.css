@@ -239,13 +239,17 @@ body {
   margin-right: 20px;
 
 }
+
 .gallery-next {
   margin-left: -5px;
 }
+
 .blocked-btn {
   opacity: 0.3;
+  outline: none;
   pointer-events: none;
 }
+
 .index-content-left::after {
   position: absolute;
   left: 48%;
@@ -642,7 +646,11 @@ body {
   width: 760px;
   height: 560px;
   border: solid 10px #ffffff;
-  background: url("/img/map.jpg");
+
+}
+
+.map-show {
+  display: block;
 }
 
 .map-close {

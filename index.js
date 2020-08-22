@@ -6,10 +6,12 @@ let passwordField = loginWindow.querySelector('.login-form-password');
 let loginForm = loginWindow.querySelector('.login-window-form');
 let overlay = document.querySelector('.overlay');
 let galleryPhotoCounter = 1;
-const GALLERY_LIMIT  = 3;
+const GALLERY_LIMIT = 3;
 let galleryNext = document.querySelector('.gallery-next');
 let galleryPrev = document.querySelector('.gallery-prev');
 let galleryPhoto = document.querySelector('.gallery-content img');
+let locationBtn = document.querySelector('.location');
+let map = document.querySelector('.map-container');
 
 loginLink.addEventListener('click', (event) => {
   event.preventDefault();
@@ -50,10 +52,9 @@ loginForm.addEventListener('submit', (event) => {
   }
 });
 window.addEventListener('load', () => {
-    galleryPrev.classList.add('blocked-btn');
-})
+  galleryPrev.classList.add('blocked-btn');
+});
 galleryNext.addEventListener('click', (event) => {
- 
   ++galleryPhotoCounter;
   if (galleryPhotoCounter === GALLERY_LIMIT) {
     galleryNext.classList.add('blocked-btn');
@@ -66,7 +67,6 @@ galleryNext.addEventListener('click', (event) => {
   );
 });
 galleryPrev.addEventListener('click', () => {
-  
   galleryPhotoCounter--;
   if (galleryPhotoCounter === 1) {
     galleryPrev.classList.add('blocked-btn');
@@ -76,4 +76,8 @@ galleryPrev.addEventListener('click', () => {
     'src',
     `img/gallery-image-${galleryPhotoCounter}.jpg`
   );
+});
+
+locationBtn.addEventListener('click', () => {
+  map.classList.add('map-show');
 });
