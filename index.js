@@ -14,6 +14,7 @@ let locationBtn = document.querySelector('.location');
 let map = document.querySelector('.map-container');
 let mapClose = map.querySelector('.map-close');
 
+
 loginLink.addEventListener('click', (event) => {
   event.preventDefault();
 
@@ -85,3 +86,4 @@ locationBtn.addEventListener('click', () => {
 mapClose.addEventListener('click', () => {
   map.classList.remove('map-show');
 });
+
