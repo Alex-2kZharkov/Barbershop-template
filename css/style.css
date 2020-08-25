@@ -7,7 +7,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
-  background: #000000 url('/img/main-background.png') no-repeat center top;
+  background: #000000 url('../img/main-background.png') no-repeat center top;
   background-size: cover;
 }
 
@@ -87,7 +87,7 @@ body {
   top: 22px;
   content: '';
   display: block;
-  background: url('/img/icon-login.gif') no-repeat center;
+  background: url('../img/icon-login.gif') no-repeat center;
   width: 18px;
   height: 16px;
   padding-right: 20px;
@@ -184,7 +184,7 @@ body {
   box-sizing: border-box;
   padding: 55px 45px 60px 80px;
   margin: 0 auto 35px;
-  background: url('/img/white-pattern.png');
+  background: url('../img/white-pattern.png');
   color: #000000;
 }
 
@@ -267,7 +267,7 @@ body {
   display: block;
   width: 8px;
   height: 278px;
-  background: url('/img/block-divider.jpg') no-repeat;
+  background: url('../img/block-divider.jpg') no-repeat;
 }
 
 .gallery-content {
@@ -279,7 +279,7 @@ body {
 }
 
 .site-footer {
-  background: url('/img/footer-background.png') repeat;
+  background: url('../img/footer-background.png') repeat;
 }
 
 .site-footer::before {
@@ -406,7 +406,7 @@ body {
 }
 
 .social-link-vk {
-  background: url('/img/logos.png') no-repeat #000000;
+  background: url('../img/logos.png') no-repeat #000000;
   background-position: 10px 10px;
 }
 
@@ -416,7 +416,7 @@ body {
 }
 
 .social-link-fs {
-  background: url('/img/logos.png') no-repeat 50% 50% #000000;
+  background: url('../img/logos.png') no-repeat 50% 50% #000000;
   background-position: -39px 10px;
 }
 
@@ -426,7 +426,7 @@ body {
 }
 
 .social-link-inst {
-  background: url('/img/logos.png') no-repeat 50% 50% #000000;
+  background: url('../img/logos.png') no-repeat 50% 50% #000000;
   background-position: -89px 10px;
 }
 
@@ -551,7 +551,7 @@ body {
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
-  transition: outline 0.25s cubic-bezier(0.25, 0.3, 0.75, 1);
+  transition: border 0.25s cubic-bezier(0.25, 0.3, 0.75, 1);
 }
 
 .login-window-form input::placeholder {
@@ -564,17 +564,18 @@ body {
 
 .login-window-form input[type="text"]:focus,
 .login-window-form input[type="password"]:focus {
-  outline: solid 2px #663d15;
+  outline: none;
+  border: solid 2px #663d15;
 }
 
 .login-form-login {
   margin-bottom: 10px;
-  background: url("/img/login-icons.png") no-repeat 270px 14px;
+  background: url("../img/login-icons.png") no-repeat 270px 14px;
 }
 
 .login-form-password {
   margin-bottom: 15px;
-  background: url("/img/login-icons.png") no-repeat 270px -36px;
+  background: url("../img/login-icons.png") no-repeat 270px -36px;
 }
 
 .login-form-checkbox {

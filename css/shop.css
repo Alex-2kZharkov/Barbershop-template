@@ -1,5 +1,5 @@
 body {
-    background: url("/img/white-pattern.png");
+    background: url("../img/white-pattern.png");
     margin: 0;
 }
 
@@ -89,7 +89,7 @@ legend {
     top: 22px;
     content: '';
     display: block;
-    background: url('/img/icon-login.gif') no-repeat center;
+    background: url('../img/icon-login.gif') no-repeat center;
     width: 18px;
     height: 16px;
     padding-right: 20px;
@@ -477,7 +477,7 @@ legend {
 }
 
 .social-link-vk {
-    background: url('/img/logos.png') no-repeat #000000;
+    background: url('../img/logos.png') no-repeat #000000;
     background-position: 10px 10px;
 }
 
@@ -487,7 +487,7 @@ legend {
 }
 
 .social-link-fs {
-    background: url('/img/logos.png') no-repeat 50% 50% #000000;
+    background: url('../img/logos.png') no-repeat 50% 50% #000000;
     background-position: -39px 10px;
 }
 
@@ -497,7 +497,7 @@ legend {
 }
 
 .social-link-inst {
-    background: url('/img/logos.png') no-repeat 50% 50% #000000;
+    background: url('../img/logos.png') no-repeat 50% 50% #000000;
     background-position: -89px 10px;
 }
 

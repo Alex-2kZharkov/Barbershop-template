@@ -4,7 +4,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-    background: #f8f5f2 url("/img/white-pattern.png");
+    background: #f8f5f2 url("../img/white-pattern.png");
 }
 
 .main-header {
@@ -90,7 +90,7 @@ body {
     top: 22px;
     content: '';
     display: block;
-    background: url('/img/icon-login.gif') no-repeat center;
+    background: url('../img/icon-login.gif') no-repeat center;
     width: 18px;
     height: 16px;
     padding-right: 20px;
@@ -297,7 +297,7 @@ body {
 }
 
 .social-link-vk {
-    background: url('/img/logos.png') no-repeat #000000;
+    background: url('../img/logos.png') no-repeat #000000;
     background-position: 10px 10px;
 }
 
@@ -307,7 +307,7 @@ body {
 }
 
 .social-link-fs {
-    background: url('/img/logos.png') no-repeat 50% 50% #000000;
+    background: url('../img/logos.png') no-repeat 50% 50% #000000;
     background-position: -39px 10px;
 }
 
@@ -317,7 +317,7 @@ body {
 }
 
 .social-link-inst {
-    background: url('/img/logos.png') no-repeat 50% 50% #000000;
+    background: url('../img/logos.png') no-repeat 50% 50% #000000;
     background-position: -89px 10px;
 }
 
