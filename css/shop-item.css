@@ -13,7 +13,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 940px;
-
     padding: 0 10px;
     margin: 0 auto;
 }
@@ -36,10 +35,10 @@ body {
 
 
 .navigation-link {
+    position: relative;
     display: block;
     box-sizing: border-box;
-    height: 100%;
-    padding: 20.5px 20px;
+    padding: 25px 20px;
     line-height: 20px;
     text-transform: uppercase;
     color: #ffffff;
@@ -49,9 +48,18 @@ body {
     text-decoration: none;
     transition: all 0.3s cubic-bezier(0.26, 0.85, 0.75, 1);
 }
-
+.active-link::after {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    right: 20px;
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #ffffff;
+}
 .img-link {
-    padding: 18px 20px 23px;
+    padding: 21px 20px 20px;
 }
 
 
@@ -188,16 +196,12 @@ body {
 }
 
 .img-container:hover .item-img {
-    transform: translateZ(5px);
+    transform: translateZ(2px);
 }
 
 .item-photos {
     perspective: 50px;
 }
-
-.photo:nth-child(2) {}
-
-.photo:nth-child(3) {}
 
 .additional-information {
     display: flex;
@@ -241,6 +245,11 @@ body {
     text-align: center;
     color: #ffffff;
     background-color: #000000;
+    transition: background 0.25s cubic-bezier(0.25, 0.3, 0.75, 1);
+}
+
+.item-buy:hover {
+    background-color: #663d15;
 }
 
 .item-parts h3 {
